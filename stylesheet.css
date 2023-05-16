@@ -1,6 +1,46 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 57%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow: hidden;
+}
+
+.Registration {
+    align-items:center;
+    padding: 5vh;
+    margin-top: 8%;
+    margin-left: 35%;
+    /* background-color: #0093E9; */
+    width: max-content;
+    border-radius: 10px;
+    background-image: linear-gradient(#0093E9, #80D0C7 70%);
+}
+button{
+    position: relative;
+    height: 4vh;
+    background-color: #6fb7e1;
+    align-items:flex-start;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid black;
+    width:18vw;
+    font-size: medium;
+    
+    
+}
+.Generate{
+    text-align: center;    
+}
+#Submit{
+    text-align: center;
+}
+input{
+    height: 4vh;
+    width: 17vw;
+    border: 2px solid black;
+    margin: 5px 0px;
+}
+h1{
+    text-align: center;
 }

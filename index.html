@@ -5,34 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/stylesheet.css"></script>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <script src="/index.js"></script>
+    
     <title>Form Validation</title>
 </head>
 
 <body>
     <div class="Registration">
-        <h1>Registration</h1>
+        <h1>REGISTRATION</h1>
+        <br>
         <div class="Username">
             <h4>Username</h4>
-            <input type="text" id="username" placeholder="Username">
+            <input type="text" id="username" onchange="Username()" placeholder="Username">
         </div>
+        <br>
         <div class="Email">
             <h4>Email</h4>
-            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="email" onchange="Checker()" placeholder="Email">
         </div>
+        <br>
         <div class="Password">
             <h4>Password</h4>
-            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="password" onchange="pass()" placeholder="Password">
         </div>
+        <br>
         <div class="Valid">
-            <h4>Password</h4>
-            <input type="password" id="Valid" placeholder="Password">
+            <h4>Confirm Password</h4>
+            <input type="password" id="Valid" onchange="valid()" placeholder="Confirm Password">
         </div>
+        <br>
         <div class="Generate">
             <button id="generate">Generate a Password For Me</button>
         </div>
-        <div class="Submit">
-            <button id="submit"></button>
+        <br>
+        <div id="Submit">
+            <button id="submit" onclick="Submit()">SUBMIT</button>
         </div>
     </div>
 
