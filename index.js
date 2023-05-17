@@ -55,6 +55,7 @@ function pass() {
     }
     else {
         document.getElementById("password").style.borderColor = "red";
+        alert("Password Should contain Numbers,Both Upper and Lower Case")
     }
 }
 
