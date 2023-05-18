@@ -34,6 +34,7 @@ function Username() {
 }
 
 // TO CHECK PASSWORD
+// Password should containg Numbers and Both Upper and Lower Case
 function pass() {
     let p = document.getElementById("password").value;
     valid();
@@ -78,6 +79,7 @@ function valid() {
 }
 
 // GERENRATE PASSWORD
+// Contains Both Upper Lower Case and Numbers and Symbols
 function Generate() {
     //For number
     let str = "";
