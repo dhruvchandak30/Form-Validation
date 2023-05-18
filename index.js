@@ -1,3 +1,4 @@
+// VALIDATING EMAIL ADDRESS
 function Checker() {
     let text = document.getElementById("email").value;
     let count = 0;
@@ -22,6 +23,8 @@ function Checker() {
         document.getElementById("email").style.borderColor = "red";
     }
 }
+
+// STORING USERNAME
 function Username() {
     let text = document.getElementById("username").value;
     localStorage.setItem("Username", text);
@@ -30,6 +33,7 @@ function Username() {
     return 1;
 }
 
+// TO CHECK PASSWORD
 function pass() {
     let p = document.getElementById("password").value;
     valid();
@@ -59,6 +63,7 @@ function pass() {
     }
 }
 
+// TO RECHECK ENTERED PASSWORD
 function valid() {
     let u = document.getElementById("password").value;
     let g = document.getElementById("Valid").value;
@@ -71,6 +76,8 @@ function valid() {
     }
     return 1;
 }
+
+// GERENRATE PASSWORD
 function Generate() {
     //For number
     let str = "";
@@ -112,6 +119,8 @@ function Generate() {
     }
     document.getElementById("generate").innerHTML = str;
     var text = str;
+
+    // COPYING TO CLIBOARD
     navigator.clipboard.writeText(text).then(function () {
         console.log('Async: Copying to clipboard was successful!');
     }, function (err) {
@@ -121,14 +130,14 @@ function Generate() {
     document.getElementById("Clipboard").style.display = "block";
 }
 
-
+// USING STORED USERNAME
 function welcome() {
     let us = localStorage.getItem("Username");
     document.getElementById("Welcome").innerHTML = `Welcome ${us} `;
 }
 
+// SUBMIT BUTTON
 function Submit() {
-
     let output = Username()
     output += Checker();
     output += pass();
