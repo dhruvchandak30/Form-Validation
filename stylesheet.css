@@ -5,9 +5,9 @@
     background-size: auto;
     overflow: hidden;
 }
+
 /* Div */
 .Registration {
-    /* background-color: #0093E9; */
     position: fixed;
     padding: 6vh;
     left: 50%;
@@ -31,12 +31,15 @@ button{
     width:100%;
     font-size: medium; 
 }
+
 .Generate{
     text-align: center;    
 }
+
 #Submit{
     text-align: center;
 }
+
 /* All the Inputs */
 input{
     height: 4vh;
@@ -44,10 +47,12 @@ input{
     border: 2px solid black;
     margin: 5px 0px;
 }
+
 /* Registration  */
 h1{
     text-align: center;
 }
+
 /* Modal for Clipboard */
 #Clipboard{
     font-size: smaller;
