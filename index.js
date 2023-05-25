@@ -10,7 +10,7 @@ function Checker() {
             count++;
             break;
         }
-
+      
 
     }
     if (count == 2) {
@@ -21,6 +21,7 @@ function Checker() {
     }
     else {
         document.getElementById("email").style.borderColor = "red";
+        alert("Enter Valid Email ID");        
     }
 }
 
